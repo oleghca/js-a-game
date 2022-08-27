@@ -31,7 +31,7 @@
             </div>
             <div class="col 
               input-group input-group-sm">
-                <input type="text" class="form-control me-5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <output type="number" class="form-control me-5" id="tabl" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
               
              </div>
             </div>
@@ -41,7 +41,7 @@
           </div>
           <div class="col
             input-group input-group-sm">
-                <input type="text" class="form-control me-5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <input type="text" class="form-control me-5"id="numOption"min="2" max="100" value=""  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
               
             </div>
         </div>
@@ -49,27 +49,29 @@
             <div class="col">
               Ваш вариант:
             </div>
-            <div class="col
-                input-group input-group-sm">
-                    <input type="text" class="form-control me-5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                  
-             </div>
+            <div class="col mb-5">
+                 <div class="  alert alert-primary "id="balBet"role="alert">
+                    <span class=""> Подсказка</span>
+                 </div>
             </div>
-        <div class="row mt-3">
-          <div class="col">
+                  
+            </div>
             
+        <div class="row ">
+          <div class="col">
           </div>
           <div class="col-7 mb-5 mt-4">
-            <button type="button" class="btn btn-primary w-100 shadow"
-        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem;             --bs-btn-font-size: .75rem;">
+            <button onclick="play()" type="button" class="btn btn-primary w-100 shadow"
+             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem;             --bs-btn-font-size: .75rem;">
                Дать ответ
              </button>
           </div>
           <div class="col">
-            
           </div>
         </div>
-      </div>
+    </div>
+</div>
+      
     
 </body>
 </html>
