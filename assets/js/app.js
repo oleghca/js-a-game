@@ -14,6 +14,9 @@ console.log(n)
 
 
 function play(){
+    if(probe == 0){
+        return;
+    }
 
     let num = +numOption.value;
      if(num > n){
@@ -28,15 +31,19 @@ function play(){
             tabl.innerHTML = probe;
         }
         if(probe == 0){
+            
+            
+            tabl.innerHTML = probe;
             balBet.innerHTML = (`Вы проиграли , моё число (${n})`);
-            probe = 10;
+            
             return;
+            
         }
         
 
         
          if(num == n){
-            probe = 10;
+            
             tabl.innerHTML = probe;
         balBet.innerHTML = 'Вы выйграли';
 
